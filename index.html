@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Application Form</title>
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="validation.css">
 </head>
 <body>
 	<!-- this is the input forms -->
@@ -60,10 +60,13 @@
 </textarea>
 </fieldset>
 
-<form> 
-<label>Email: <input type="email" /></label><br />
-<label>Phone Number: <input type="text" /></label><br />
-<label>LinkedIn URL: <input type="text" /></label><br />
+<form class="contact"> 
+	<label>Email Address:</label>
+	<input type="email" required/>
+	<label>Phone Number:</label>
+	<input type="number" required/>
+	<label>Linkedin URL:</label>
+  <input type="url" />
 </form>
 
 <!-- This is the Submit button -->
