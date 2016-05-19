@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Application Form</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<!-- this is the input forms -->
+	<h1>Personal Information</h1>
+		<form action="getform.php" method="get">
+		     <label>First name: <input type="text" /></label><br />
+		     <label>Middle name: <input type="text" /></label><br />
+		     <label>Last Name: <input type="text" /></label><br />
+		     <label>Address: <input type="text" /></label><br />
+		     <label>Occupation: <input type="text" /></label><br />
+		     <label>Employer: <input type="text" /></label><br />
+		     <label>Employer Address: <input type="text" /></label><br/>
+		</form>
+<!-- This is the Drop down menu -->
+<fieldset>
+<legend>Loan Length</legend>
+	<select name="Type of Loan" selected>
+	  <option value="value1">Commerical</option> 
+	  <option value="value2">Real Estate</option>
+	  <option value="value3">Personal</option>
+	  <option value="value3">Mortgage</option>
+	</select>
+</fieldset>
+<br>
+
+<form>
+<label>Request Amount: <input type="text" /></label><br/>
+</form>
+<br>
+
+<!-- this is the checkbox -->
+<fieldset>
+	<legend>Your Conditions</legend>
+		<label><input type="checkbox" id="cbox1" value="first_checkbox">I have a down payment</label>
+		<input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">Out-of-state Resident</label>
+		<input type="checkbox" id="cbox3" value="second_checkbox"> <label for="cbox3">Married</label>
+		<input type="checkbox" id="cbox4" value="second_checkbox"> <label for="cbox4">Will need Co-sign</label>
+</fieldset>
+
+	<!-- This is the radio button area -->
+	<form action="" method="post">
+  		<fieldset>
+    		<legend>Loan Length</legend>
+    		<input type="radio" name="radio"> <label for="radio">5 years</label>
+    		<input type="radio" name="radio"> <label for="radio">15 years</label>
+    		<input type="radio" name="radio"> <label for="radio">30 years</label>
+  		</fieldset>
+	</form>
+<!-- additional comments -->
+<fieldset>
+	<legend>Additional Comments</legend>
+	<textarea placeholder="text" rows="4" cols="50"> 
+</textarea>
+</fieldset>
+
+<form> 
+<label>Email: <input type="email" /></label><br />
+<label>Phone Number: <input type="text" /></label><br />
+<label>LinkedIn URL: <input type="text" /></label><br />
+</form>
+
+<!-- This is the Submit button -->
+	<input type="submit" value="Submit" />
+
+</body>
+</html>
